@@ -30,7 +30,7 @@ To bypass these hardware guardrails and achieve a high-precision measurement, I 
 * VBUS 22kHz Ripple
 * ![VBUS 22kHz Ripple](https://github.com/user-attachments/assets/7ff522a0-dd4c-44aa-ad6f-13d86b632bb5)
 
-* BW limiting on
+* Advanced Bandwidth Limiting
 * ![transient_test_no_sawtooth_pattern_shifts_downward](https://github.com/user-attachments/assets/6e79d8e1-fdef-41c6-a05b-6671702ba573)
 
 
