@@ -27,5 +27,9 @@ To bypass these hardware guardrails and achieve a high-precision measurement, I 
 * **Tool Architecture:** Successful validation requires an understanding of the test equipment's internal constraints (ADC clipping and amplifier stages).
 * **Legacy Power Handshaking:** Confirmed that when using **USB-A to USB-C Legacy cables**, the CC pin correctly remains at 0V,
 
+* VBUS 22kHz Ripple
+* ![VBUS 22kHz Ripple](https://github.com/user-attachments/assets/7ff522a0-dd4c-44aa-ad6f-13d86b632bb5)
+
+
 # USB-C_Validation
 USB-C_Validation_Technical_Notes
