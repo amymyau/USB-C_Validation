@@ -1,6 +1,7 @@
 
 ##  Full-Stack Root Cause Analysis: USB-C Power Integrity
 **Project Type:** Hardware Pathfinding & Power Integrity (PI) Validation
+**Open to Senior System Validation and Reliability roles in AI Infrastructure
 
 ### 🛠 The Challenge: Intermittent "Sink" Detection & System Resets
 In a high-scale automation environment, edge devices exhibited erratic power negotiation and "unresponsive" states. Standard debugging had failed to isolate the root cause between the USB-C physical layer and the system power delivery network.
