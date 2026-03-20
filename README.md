@@ -1,3 +1,28 @@
+
+##  Full-Stack Root Cause Analysis: USB-C Power Integrity
+**Project Type:** Hardware Pathfinding & Power Integrity (PI) Validation
+
+### 🛠 The Challenge: Intermittent "Sink" Detection & System Resets
+In a high-scale automation environment, edge devices exhibited erratic power negotiation and "unresponsive" states. Standard debugging had failed to isolate the root cause between the USB-C physical layer and the system power delivery network.
+
+### Pathfinding & Root Cause Analysis (RCA)
+1. **Architectural Validation (Logic Layer):** * Pathfound hardware-level "Sink" detection failures by implementing precision **$5.1k\Omega$ pull-down resistors** on CC-pins. 
+   * This ensured deterministic power negotiation, proving the upstream source was failing to resolve the resistor divider correctly.
+
+2. **Power Integrity (PI) Characterization:** * Conducted high-resolution characterization of the **$5V$ VBUS** rail using a 500MHz oscilloscope (AC-coupled). 
+   * Isolated a **$22kHz$ switching ripple** that exceeded the $100mV$ peak-to-peak safety margin, causing downstream logic resets.
+
+3. **The "Path" to Resolution:** * Traced the ripple frequency to **PMIC switching harmonics**. 
+   * Provided the architectural "Path" for a hardware redesign of the decoupling network and a firmware adjustment to the switching frequency.
+
+### Technical Impact
+* **Operational Excellence:** Eliminated intermittent system resets for 24/7 edge-computing reliability.
+* **Cost Savings:** Prevented broad hardware recalls by isolating the issue to a specific decoupling/PMIC harmonic interaction.
+* **Validation Standard:** Established a new PI testing protocol for all future USB-C "Sink" hardware deployments.
+
+---
+**Keywords:** #Pathfinding #PowerIntegrity #USBC #RootCauseAnalysis #PMIC #HardwareValidation
+
 ## Technical Deep Dive: Overcoming Hardware & Tooling Constraints
 
 ### 1. The Challenge: Oscilloscope "Parameter Limited" Error
