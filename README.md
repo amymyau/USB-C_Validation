@@ -20,8 +20,6 @@ In a high-scale automation environment, edge devices exhibited erratic power neg
 * **Cost Savings:** Prevented broad hardware recalls by isolating the issue to a specific decoupling/PMIC harmonic interaction.
 * **Validation Standard:** Established a new PI testing protocol for all future USB-C "Sink" hardware deployments.
 
----
-**Keywords:** #Pathfinding #PowerIntegrity #USBC #RootCauseAnalysis #PMIC #HardwareValidation
 
 ## Technical Deep Dive: Overcoming Hardware & Tooling Constraints
 
